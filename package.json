@@ -1,0 +1,29 @@
+{
+  "name": "express-auto-routes",
+  "version": "1.0.0",
+  "description": "Mount express controllers to routes automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenberkeley/express-auto-routes.git"
+  },
+  "keywords": [
+    "express",
+    "routes",
+    "auto",
+    "mount"
+  ],
+  "author": {
+    "email": "kenberkeley@foxmail.com",
+    "name": "Ken Berkeley",
+    "url": "http://kenberkeley.com"  
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenberkeley/express-auto-routes/issues"
+  },
+  "homepage": "https://github.com/kenberkeley/express-auto-routes"
+}
