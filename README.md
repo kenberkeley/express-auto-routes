@@ -23,6 +23,7 @@ app.get('/user/logout', userCtrl.logout);
 
 ----------
 It's hardly elegant, so here comes **express-auto-routes**.
+Firstly, ```npm install express-auto-routes --save```.
 
 ***e.g.***
 
