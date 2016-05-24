@@ -65,3 +65,32 @@ Since we glob file recursively, without doubt it supports **unlimited** sub fold
 
 ----------
 Here I highly recommend you checking out the `example/` folder for more detail.
+
+```
+> cd example
+> npm install
+> npm run test (or node app.js)
+
+[AutoMount] use /home/
+[AutoMount] use /user/
+[AutoMount] use /user/logout/
+[AutoMount] all /user/setting/
+[AutoMount] get /home/foo/bar/world/
+[AutoMount] get /user/setting/:uid
+[AutoMount] delete /user/logout/:uid
+[AutoMount] get /home/foo/hello/
+[AutoMount] get /home/foo/bar/
+[AutoMount] get /user/logout/
+[AutoMount] get /user/:uid?
+[AutoMount] get /home/foo/
+[AutoMount] get /home/xyz/
+[AutoMount] post /setting
+[AutoMount] get /login
+[AutoMount] get /home/
+[AutoMount] post /login
+[AutoMount] put /user/
+[AutoMount] post /log
+[AutoMount] get /
+```
+
+then visit `localhost:8080`
