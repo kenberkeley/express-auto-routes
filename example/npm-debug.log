@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\duoyi\\Desktop\\express-auto-routes\\node_modules\\express-auto-routes\\example',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\duoyi\AppData\Roaming\npm-cache\test\1.0.0\package.tgz not in flight; packing
+9 info lifecycle test@1.0.0~prepublish: test@1.0.0
+10 silly lifecycle test@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ 'C:\\Users\\duoyi\\AppData\\Roaming\\npm-cache\\test\\1.0.0\\package.tgz',
+11 verbose tar pack   'C:\\Users\\duoyi\\Desktop\\express-auto-routes\\node_modules\\express-auto-routes\\example' ]
+12 verbose tarball C:\Users\duoyi\AppData\Roaming\npm-cache\test\1.0.0\package.tgz
+13 verbose folder C:\Users\duoyi\Desktop\express-auto-routes\node_modules\express-auto-routes\example
+14 verbose addLocalTarball adding from inside cache C:\Users\duoyi\AppData\Roaming\npm-cache\test\1.0.0\package.tgz
+15 silly cache afterAdd test@1.0.0
+16 verbose afterAdd C:\Users\duoyi\AppData\Roaming\npm-cache\test\1.0.0\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\duoyi\AppData\Roaming\npm-cache\test\1.0.0\package\package.json written
+18 silly publish { name: 'test',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'test',
+18 silly publish   main: 'app.js',
+18 silly publish   scripts: { test: 'node app.js' },
+18 silly publish   author: { name: 'Ken Berkeley', email: 'kenberkeley@foxmail.com' },
+18 silly publish   license: 'MIT',
+18 silly publish   dependencies: { express: '^4.13.4' },
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'test@1.0.0',
+18 silly publish   _shasum: 'b8c2bbe731a1e66cee466651dcf5aa3b606d1b0b',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name test
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry http://registry.npmjs.org/
+23 silly mapToRegistry uri http://registry.npmjs.org/test
+24 verbose publish registryBase http://registry.npmjs.org/
+25 silly publish uploading C:\Users\duoyi\AppData\Roaming\npm-cache\test\1.0.0\package.tgz
+26 verbose request uri http://registry.npmjs.org/test
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 17:01:03
+29 verbose request using bearer token for auth
+30 verbose request id 0d23ba6c0b17e81d
+31 http request PUT http://registry.npmjs.org/test
+32 http 403 http://registry.npmjs.org/test
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '98',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 24 May 2016 09:01:05 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-nrt6127-NRT',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1464080464.668016,VS0,VE547',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 verbose request invalidating C:\Users\duoyi\AppData\Roaming\npm-cache\registry.npmjs.org\test on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: you do not have permission to publish "test". Are you logged in as the correct user? : test
+36 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+36 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+36 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid test
+39 verbose cwd C:\Users\duoyi\Desktop\express-auto-routes\node_modules\express-auto-routes\example
+40 error Windows_NT 6.1.7601
+41 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+42 error node v5.3.0
+43 error npm  v3.3.12
+44 error code E403
+45 error you do not have permission to publish "test". Are you logged in as the correct user? : test
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
