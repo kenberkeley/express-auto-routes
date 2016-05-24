@@ -93,4 +93,4 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 [AutoMount] get /
 ```
 
-then visit `localhost:8080`
+then visit `localhost:8080` to test the above APIs
