@@ -1,6 +1,6 @@
 {
   "name": "express-auto-routes",
-  "version": "1.2.0",
+  "version": "1.8.0",
   "description": "Mount express controllers to routes automatically",
   "main": "index.js",
   "scripts": {
