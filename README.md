@@ -44,11 +44,6 @@ app.listen(8080);
 exports.get = function (req, res, next) {
   res.send('hello world');
 };
-
-// method case insensitive
-exports.POST = function (req, res, next) {
-  // database operation...
-};
 ```
 
 Then visit `localhost:8080/hello/world`, you will see `hello world`
