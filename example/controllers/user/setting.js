@@ -19,7 +19,7 @@ exports.get = function (req, res, next) {
 
 exports.post = {
   url: '/setting',
-  params: ':hello', // ignored since url is provided
+  params: ':hello', // since url is provided, params would be ignored
   middlewares: [authentication, settingMiddleware],
   handler: function (req, res, next) {
     res.send('POST /user/setting');
