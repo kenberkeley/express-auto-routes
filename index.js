@@ -9,7 +9,7 @@ module.exports = function (app) {
 
   return function (pathToCtrlDir) {
     // a sorted collection contains maps of url(mount path) => pathToFile
-    // why it must be sorted? turn to the end of getFileMapCol.js for more detail
+    // why it must be sorted? turn to the end of lib/mountToApp.js for more detail
     var ctrlCol = getFileMapCol(pathToCtrlDir);
 
     ctrlCol.forEach(function(fileMap) {
