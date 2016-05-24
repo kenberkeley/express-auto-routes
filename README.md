@@ -59,12 +59,12 @@ Since we glob file recursively, without doubt it supports **unlimited** sub fold
 
 ***e.g.***
 ```javascript
-[root]/controllers/a/b/c/d/e/f/g => localhost:8080/a/b/c/d/e/f/g
+[root]/controllers/a/b/c/d/e/f/g.js => localhost:8080/a/b/c/d/e/f/g
 ```
 
 
 ----------
-Here I highly recommend you checking out the `example/` folder for more detail.
+Here I highly recommend you checking out the `example/` folder for more detail (documentation).
 
 ```
 > cd example
