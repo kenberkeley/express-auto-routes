@@ -24,9 +24,6 @@ module.exports = function (app) {
         ctrlMiddlewares = ctrl.middlewares;
 
       for (var method in ctrl) {
-        // avoid traversing prototype
-        if (!ctrl.hasOwnProperty(method)) return;
-
         // make request method case insensitive
         var _method = method.toLowerCase();
         if (!allowMethod[_method]) continue;
