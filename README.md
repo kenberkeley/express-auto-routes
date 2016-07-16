@@ -59,7 +59,7 @@ Since we glob file recursively, without doubt it supports **unlimited** sub fold
 
 
 ----------
-Here I highly recommend you checking out the `example/` folder for more detail (documentation).
+Here I highly recommend you checking out the `example/` folder for more detail.
 
 ```
 > cd example
