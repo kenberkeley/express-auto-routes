@@ -4,7 +4,8 @@
   "description": "Mount express controllers to routes automatically",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha --recursive",
+    "test-travis": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,18 @@
   "author": {
     "email": "kenberkeley@foxmail.com",
     "name": "Ken Berkeley",
-    "url": "http://kenberkeley.com"  
+    "url": "http://kenberkeley.com"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kenberkeley/express-auto-routes/issues"
   },
-  "homepage": "https://github.com/kenberkeley/express-auto-routes"
+  "homepage": "https://github.com/kenberkeley/express-auto-routes",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "supertest": "^1.2.0"
+  }
 }

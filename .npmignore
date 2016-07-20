@@ -1,3 +1,6 @@
 .git
-example/
+.gitignore
+.travis.yml
+example
+test
 npm-debug.log
