@@ -1,4 +1,6 @@
-Express Auto Routes
+# Express Auto Routes
+[![Build Status](https://secure.travis-ci.org/kenberkeley/express-auto-routes.svg?branch=master)](http://travis-ci.org/kenberkeley/express-auto-routes)  
+
 ---------
 In most of the time, we need to mount handlers/controllers to routes manually.  
 
