@@ -1,6 +1,7 @@
 .git
 .gitignore
 .travis.yml
+coverage
 example
 test
 npm-debug.log
