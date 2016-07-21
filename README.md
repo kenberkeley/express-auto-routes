@@ -100,7 +100,7 @@ then visit `localhost:8080` to test the above APIs
 [node-url]: https://nodejs.org
 [npm-image]: https://img.shields.io/npm/v/express-auto-routes.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/express-auto-routes
-[travis-image]: https://img.shields.io/travis/kenberkeley/express-auto-routes/master.svg?style=flat-square
+[travis-image]: https://secure.travis-ci.org/kenberkeley/express-auto-routes.svg?branch=master
 [travis-url]: https://travis-ci.org/kenberkeley/express-auto-routes
 [dep-image]: http://david-dm.org/kenberkeley/express-auto-routes.svg?style=flat-square
 [dep-url]:http://david-dm.org/kenberkeley/express-auto-routes
