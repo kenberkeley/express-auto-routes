@@ -96,10 +96,6 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 
 then visit `localhost:8080` to test the above APIs
 
-[node-image]: https://img.shields.io/node/v/express-auto-routes.svg?style=flat-square
-[node-url]: https://nodejs.org
-[npm-image]: https://img.shields.io/npm/v/express-auto-routes.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/express-auto-routes
 [travis-image]: https://secure.travis-ci.org/kenberkeley/express-auto-routes.svg?branch=master
 [travis-url]: https://travis-ci.org/kenberkeley/express-auto-routes
 [dep-image]: http://david-dm.org/kenberkeley/express-auto-routes.svg?style=flat-square
