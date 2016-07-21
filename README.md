@@ -1,5 +1,9 @@
 # Express Auto Routes
-[![Build Status](https://secure.travis-ci.org/kenberkeley/express-auto-routes.svg?branch=master)](http://travis-ci.org/kenberkeley/express-auto-routes)  
+[![Node.js Version][node-image]][node-url]
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Dependency Status][dep-image]][dep-url]
+[![Coverage Status][cov-img]][cov-url]
 
 ---------
 In most of the time, we need to mount handlers/controllers to routes manually.  
@@ -91,3 +95,14 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 ```
 
 then visit `localhost:8080` to test the above APIs
+
+[node-image]: https://img.shields.io/node/v/express-auto-routes.svg?style=flat-square
+[node-url]: https://nodejs.org
+[npm-image]: https://img.shields.io/npm/v/express-auto-routes.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/express-auto-routes
+[travis-image]: https://img.shields.io/travis/kenberkeley/express-auto-routes/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/kenberkeley/express-auto-routes
+[dep-image]: http://david-dm.org/kenberkeley/express-auto-routes.svg?style=flat-square
+[dep-url]:http://david-dm.org/kenberkeley/express-auto-routes
+[cov-img]:https://coveralls.io/repos/kenberkeley/express-auto-routes/badge.svg?branch=master&service=github
+[cov-url]:https://coveralls.io/github/kenberkeley/express-auto-routes?branch=master
