@@ -1,4 +1,6 @@
 # Express Auto Routes
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Dependency Status][dep-image]][dep-url]
 [![Coverage Status][cov-img]][cov-url]
@@ -9,7 +11,7 @@ In most of the time, we need to mount handlers/controllers to routes manually.
 ***e.g.***
 
 ```javascript
-/** now we are in [root]/routes/index.js **/
+/** now we are in routes/index.js **/
 var homeRouter = require('./home/'),
   userCtrl = require('../controllers/user');
 
@@ -24,13 +26,13 @@ app.get('/user/logout', userCtrl.logout);
 ```
 
 ----------
-It's hardly elegant, so here comes **express-auto-routes**.
-Firstly, ```npm install express-auto-routes --save``` please.
+It's hardly elegant, so here comes **express-auto-routes**.  
+Firstly, ```npm install express-auto-routes --save```
 
 ***e.g.***
 
 ```javascript
-/** now we are in [root]/app.js **/
+/** now we are in app.js **/
 var path = require('path'),
   express = require('express'),
   app = express();
@@ -44,7 +46,7 @@ app.listen(8080);
 ```
 
 ```javascript
-/** now we are in [root]/controllers/hello/world.js **/
+/** now we are in controllers/hello/world.js **/
 exports.get = function (req, res, next) {
   res.send('hello world');
 };
@@ -53,12 +55,12 @@ exports.get = function (req, res, next) {
 Then visit `localhost:8080/hello/world`, you will see `hello world`
 
 ----------
-The magic is just globbing all the **valid** controller files and resolve them based on relative path.
+The magic is just globbing all the **valid** controller files and resolve them based on relative path.  
 Since we glob file recursively, without doubt it supports **unlimited** sub folders.
 
 ***e.g.***
 ```javascript
-[root]/controllers/a/b/c/d/e/f/g.js => localhost:8080/a/b/c/d/e/f/g
+controllers/a/b/c/d/e/f/g.js => localhost:8080/a/b/c/d/e/f/g
 ```
 
 
@@ -66,9 +68,8 @@ Since we glob file recursively, without doubt it supports **unlimited** sub fold
 Here I highly recommend you checking out the `example/` folder for more detail.
 
 ```
-> cd example
 > npm install
-> npm run test (or node app.js)
+> npm run example
 
 [AutoMount] use /home/
 [AutoMount] use /user/
@@ -94,9 +95,12 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 
 then visit `localhost:8080` to test the above APIs
 
+[npm-url]: https://npmjs.org/package/express-auto-routes
+[downloads-image]: http://img.shields.io/npm/dm/express-auto-routes.svg
+[npm-image]: http://img.shields.io/npm/v/express-auto-routes.svg
 [travis-image]: https://secure.travis-ci.org/kenberkeley/express-auto-routes.svg?branch=master
 [travis-url]: https://travis-ci.org/kenberkeley/express-auto-routes
 [dep-image]: http://david-dm.org/kenberkeley/express-auto-routes.svg?style=flat-square
-[dep-url]:http://david-dm.org/kenberkeley/express-auto-routes
-[cov-img]:https://coveralls.io/repos/github/kenberkeley/express-auto-routes/badge.svg?branch=master
-[cov-url]:https://coveralls.io/github/kenberkeley/express-auto-routes?branch=master
+[dep-url]: http://david-dm.org/kenberkeley/express-auto-routes
+[cov-img]: https://coveralls.io/repos/github/kenberkeley/express-auto-routes/badge.svg?branch=master
+[cov-url]: https://coveralls.io/github/kenberkeley/express-auto-routes?branch=master

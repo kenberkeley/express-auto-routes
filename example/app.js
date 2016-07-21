@@ -27,4 +27,5 @@ app.use(function(err, req, res, next) {
 });
 
 // run node app.js and visit localhost:8080 in your browser
+console.log('[INFO] Example running at localhost:8080');
 app.listen(8080);

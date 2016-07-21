@@ -4,6 +4,7 @@
   "description": "Mount express controllers to routes automatically",
   "main": "index.js",
   "scripts": {
+    "example": "node example/app.js",
     "test": "mocha --recursive",
     "test-travis": "istanbul cover _mocha"
   },
