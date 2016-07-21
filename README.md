@@ -1,6 +1,4 @@
 # Express Auto Routes
-[![Node.js Version][node-image]][node-url]
-[![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Dependency Status][dep-image]][dep-url]
 [![Coverage Status][cov-img]][cov-url]
