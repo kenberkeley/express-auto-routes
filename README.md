@@ -98,5 +98,5 @@ then visit `localhost:8080` to test the above APIs
 [travis-url]: https://travis-ci.org/kenberkeley/express-auto-routes
 [dep-image]: http://david-dm.org/kenberkeley/express-auto-routes.svg?style=flat-square
 [dep-url]:http://david-dm.org/kenberkeley/express-auto-routes
-[cov-img]:https://coveralls.io/repos/kenberkeley/express-auto-routes/badge.svg?branch=master&service=github
+[cov-img]:https://coveralls.io/repos/github/kenberkeley/express-auto-routes/badge.svg?branch=master
 [cov-url]:https://coveralls.io/github/kenberkeley/express-auto-routes?branch=master
