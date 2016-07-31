@@ -1,4 +1,4 @@
-# Express Auto Routes
+# Express 自动(挂载)路由
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][npm-url]
 [![build status][travis-image]][travis-url]
