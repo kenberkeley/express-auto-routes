@@ -1,7 +1,7 @@
 exports.use = {
   middlewares: require('../../middlewares/authentication'),
   handler: function (req, res, next) {
-    console.info('routes begin with /user/logout must pass auth to get here');
+    console.info('passed the auth');
     next();
   }
 };

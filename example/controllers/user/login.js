@@ -1,6 +1,6 @@
 exports.url = '/login'; // rewrite default /user/login => /login
 
-exports.get = function () {
+exports.get = function (req, res, next) {
   res.send('GET /login');
 };
 

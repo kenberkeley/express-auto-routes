@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/kenberkeley/express-auto-routes",
   "devDependencies": {
+    "async": "^2.0.1",
     "chai": "^3.5.0",
     "express": "^4.14.0",
     "istanbul": "^0.4.4",

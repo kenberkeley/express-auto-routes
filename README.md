@@ -5,7 +5,7 @@
 [![Dependency Status][dep-image]][dep-url]
 [![Coverage Status][cov-img]][cov-url]
 
-In most of the time, we need to mount handlers/controllers to routes manually.  
+In most of the time, we need to mount handlers / controllers to routes manually.  
 
 ***e.g.***
 
@@ -57,7 +57,7 @@ Then visit `localhost:8080/hello/world`, you will see `hello world`
 ****
 
 The magic is just globbing all the **valid** controller files and resolve them based on relative path.  
-Since we glob file recursively, without doubt it supports **unlimited** sub folders.
+Since we glob files recursively, without doubt it supports **unlimited** sub folders.
 
 ***e.g.***
 ```javascript
@@ -94,10 +94,10 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 [AutoMount] get /
 ```
 
-then visit `localhost:8080` to test the above APIs
+then visit `localhost:8080` and test the above APIs with [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 
 ****
-> [UPDATE] checkout [Message Board API](https://github.com/kenberkeley/msg-board-api) which based on this package.
+> [ A more practical project ] checkout [Message Board API](https://github.com/kenberkeley/msg-board-api) which based on this package.
 
 [npm-url]: https://npmjs.org/package/express-auto-routes
 [downloads-image]: http://img.shields.io/npm/dm/express-auto-routes.svg
