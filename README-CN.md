@@ -99,7 +99,7 @@ controllers/a/b/c/d/e/f/g.js => localhost:8080/a/b/c/d/e/f/g
 
 ****
 
-> [ 一个更实际的例子 ] 请点击 [留言板API](https://github.com/kenberkeley/msg-board-api)
+> [ 一个更实际的例子 ] 请点击 [简易留言板 RESTful API](https://github.com/kenberkeley/msg-board-api)
 
 
 [npm-url]: https://npmjs.org/package/express-auto-routes

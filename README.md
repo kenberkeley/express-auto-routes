@@ -99,7 +99,7 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 then visit `localhost:8080` and test the above APIs with [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 
 ****
-> [ A more practical project ] checkout [Message Board API](https://github.com/kenberkeley/msg-board-api) which based on this package.
+> [ A more practical project ] checkout [A Simple Message Board RESTful API](https://github.com/kenberkeley/msg-board-api) which based on this package.
 
 [npm-url]: https://npmjs.org/package/express-auto-routes
 [downloads-image]: http://img.shields.io/npm/dm/express-auto-routes.svg
