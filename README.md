@@ -5,7 +5,7 @@
 [![Dependency Status][dep-image]][dep-url]
 [![Coverage Status][cov-img]][cov-url]
 
-> 中文文档请点击 [这里](./README-CN.md)
+> 中文介绍请点击 [这里](./README-CN.md)
 
 In most of the time, we need to mount handlers / controllers to routes manually.  
 
