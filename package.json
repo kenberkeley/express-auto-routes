@@ -18,11 +18,7 @@
     "auto",
     "mount"
   ],
-  "author": {
-    "email": "kenberkeley@foxmail.com",
-    "name": "Ken Berkeley",
-    "url": "http://kenberkeley.com"
-  },
+  "author": "Ken Berkeley <kenberkeley@foxmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kenberkeley/express-auto-routes/issues"
