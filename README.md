@@ -5,7 +5,6 @@
 [![Dependency Status][dep-image]][dep-url]
 [![Coverage Status][cov-img]][cov-url]
 
----------
 In most of the time, we need to mount handlers/controllers to routes manually.  
 
 ***e.g.***
@@ -25,9 +24,10 @@ app.get('/user/logout', userCtrl.logout);
 ...
 ```
 
-----------
+****
+
 It's hardly elegant, so here comes **express-auto-routes**.  
-Firstly, ```npm install express-auto-routes --save```
+Firstly, **```npm install express-auto-routes --save```**  
 
 ***e.g.***
 
@@ -54,7 +54,8 @@ exports.get = function (req, res, next) {
 
 Then visit `localhost:8080/hello/world`, you will see `hello world`
 
-----------
+****
+
 The magic is just globbing all the **valid** controller files and resolve them based on relative path.  
 Since we glob file recursively, without doubt it supports **unlimited** sub folders.
 
@@ -94,6 +95,9 @@ Here I highly recommend you checking out the `example/` folder for more detail.
 ```
 
 then visit `localhost:8080` to test the above APIs
+
+****
+> [UPDATE] checkout [Message Board API](https://github.com/kenberkeley/msg-board-api) which based on this package.
 
 [npm-url]: https://npmjs.org/package/express-auto-routes
 [downloads-image]: http://img.shields.io/npm/dm/express-auto-routes.svg
