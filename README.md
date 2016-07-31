@@ -5,6 +5,8 @@
 [![Dependency Status][dep-image]][dep-url]
 [![Coverage Status][cov-img]][cov-url]
 
+> 中文文档请点击 [这里](./README-CN.md)
+
 In most of the time, we need to mount handlers / controllers to routes manually.  
 
 ***e.g.***
@@ -17,7 +19,7 @@ var homeRouter = require('./home/'),
 // Method 1: mount a sub router to a path. kinda code splitting but still complicated
 app.use('/', homeRouter);
 
-// Method 2: mount controllers to routes directly, sucks
+// Method 2: mount controllers to routes one by one, sucks
 app.get('/user', userCtrl.index);
 app.post('/user/login', userCtrl.login);
 app.get('/user/logout', userCtrl.logout);
@@ -37,7 +39,7 @@ var path = require('path'),
   express = require('express'),
   app = express();
 
-var autoRoutes = require('express-auto-routes')(app); // you don't need a `routes` folder now
+var autoRoutes = require('express-auto-routes')(app); // you don't need `routes` folder any more
 autoRoutes(path.join(__dirname, './controllers')); // auto mounting... done!
 
 // ...other configures
