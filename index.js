@@ -32,9 +32,20 @@ module.exports = function (app) {
           mountPath = ctrlUrl || (url + (ctrlParams || '')),
           middlewares = ctrlMiddlewares,
           handler = ctrl[method];
-        
+
+        if(Object.prototype.toString.call(handler) == '[object Array]'){
+          handler.map(function(item){
+            let URIpath =  item.url &&  beginsWithSlash(item.url) || mountPath;
+            if(item.params){
+              URIpath +=  beginsWithColon(item.params);
+            }
+            item.handler && mountToApp.mount(_method, [URIpath, item.handler]);
+          })
+          continue;
+        }
+
         // override single method with object
-        if (typeof handler === 'object') {
+        if (Object.prototype.toString.call(handler) == '[object Object]') {
           if (!Object.keys(handler).length) {
             console.info('[Error]', method, mountPath, 'is an empty object');
             return;
