@@ -39,7 +39,7 @@ module.exports = function (app) {
             if(item.params){
               URIpath +=  beginsWithColon(item.params);
             }
-            mountToApp.mount(_method, [URIpath, item.handler]);
+            item.handler && mountToApp.mount(_method, [URIpath, item.handler]);
           })
           continue;
         }
