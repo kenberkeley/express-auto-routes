@@ -7,7 +7,12 @@ var getFileMapCol = require('./lib/getFileMapCol'),
 module.exports = function (app) {
   var mountToApp = new MountToApp(app);
 
-  return function (pathToCtrlDir, domain = /localhost|127.0.0.1/) {
+  return function (pathToCtrlDir, domain = "localhost") {
+    // aliasing localhost
+    if(domain === "127.0.0.1") {
+      domain = "localhost|127.0.0.1";
+    }
+
     // a sorted collection contains maps of url(mount path) => pathToFile
     // why it must be sorted? turn to the end of lib/mountToApp.js for more detail
     var ctrlCol = getFileMapCol(pathToCtrlDir);
