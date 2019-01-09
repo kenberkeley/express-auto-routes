@@ -10,7 +10,7 @@ module.exports = function (app) {
   return function (pathToCtrlDir, domain = "localhost") {
     // aliasing localhost
     if(domain === "127.0.0.1") {
-      domain = "localhost|127.0.0.1";
+      domain = "localhost";
     }
 
     // a sorted collection contains maps of url(mount path) => pathToFile
